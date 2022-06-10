@@ -1,0 +1,564 @@
+.container_view {
+    max-width: 860px;
+    max-height: 500px;
+    height: fit-content;
+    margin: 100px auto 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container_detail{
+    width:77vw;
+    margin: 5pc 14%;
+    height: 100%;
+}
+.back_btn{
+    position: sticky;
+    border-radius: 30px;
+    background-color: white;
+    margin: 17px;
+    border: none;
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+  
+.showcase {
+    padding: 5px 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+  
+.showcase li small {
+    margin-left: 10px;
+}
+
+
+.availableShow :hover{
+  transform: scale(1.06);
+}
+ 
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+    margin-left: 19%;
+  }
+  
+.seat {
+    background-color: #444451;
+    height: 2pc;
+    width: 3pc;
+    margin: 1pc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+
+  
+.seat_selected {
+    background-color: rgb(45, 141, 206);
+    height: 2pc;
+    width: 3pc;
+    margin: 1pc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.seat_selected .tooltiptext{
+  visibility: hidden;
+    height: inherit;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.seat_selected:hover .tooltiptext {
+  visibility: visible;
+  margin-left: 2pc;
+  margin-top: 20px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+  
+  .seat_occupied {
+    background-color: rgb(36, 158, 25);
+    height: 2pc;
+    width: 3pc;
+    margin: 1pc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .seat .tooltiptext{
+    visibility: hidden;
+    height: inherit;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .seat:hover .tooltiptext {
+    visibility: visible;
+    margin-left: 2pc;
+    margin-top: 25px;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .seat:nth-of-type(2) {
+    margin-right: 18px;
+  }
+  
+  .seat:nth-last-of-type(2) {
+    margin-left: 18px;
+  }
+    
+  .row {
+    display: flex;
+  }
+  
+  .screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  }
+
+  .snack_header{
+    text-align: center;
+  }
+
+  .cate{
+    color:#31d7a9;
+    text-transform: uppercase;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 8px;
+  }
+
+  .snack_header .title{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .snack_header p{
+    font-size: 18px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .booking_summary{
+    padding: 30px;
+    border: 1px solid #11326f;
+    border-bottom-style: dashed ;
+    padding-bottom: 10px;
+    margin-top: 60px;
+    background-color: #032055;
+  }
+  .booking_summary .title{
+    text-align: center;
+    border-bottom: 1px dashed #11326f;
+    padding-bottom: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .booking_summary ul{
+    border-bottom: 1px dashed #11326f;
+  }
+
+  .booking_summary ul li{
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .booking_summary ul li .subtitle{
+    text-transform: uppercase;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .booking_summary ul li .info{
+    -webkit-box-pack: justify;
+    font-size: 14px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    color:#9aace5;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .side_shape{
+    position: relative;
+  }
+
+  .side_shape ::before{
+    position: absolute;
+    content: '';
+  }
+  .side_shape ::after{
+    left: -26px;
+    width: 48px;
+    height: 48px;
+    background-color: #001232;
+    border-radius: 50%;
+    top: -48px;
+  }
+
+  .proceed_area{
+    background: #05245c;
+    padding: 30px;
+    text-align: center !important;
+  }
+
+  .proceed_area .subtitle{
+    text-transform: uppercase;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  ul li{
+    list-style: none;
+  }
+
+  p.text {
+    margin: 2pc 2pc;
+  }
+  
+  p.text span {
+    color: #6feaf6;
+  }
+
+  .screen {
+    background-color: #fff;
+    height: 11pc;
+    width: 80%;
+    margin: 15px 0;
+    transform: rotateX(72deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  }
+
+ .count {
+    color: #000;
+    width: 5pc;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+    padding: 0 2px;
+    text-align: center;
+}
+ .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    width: 30px;
+    height: 34px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 3px;
+    }
+ .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    width: 30px;
+    height: 34px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+    margin-right: 3px
+}
+.minus:hover{
+  background-color: #000 !important;
+  color:#fff
+}
+.plus:hover{
+  background-color: #000 !important;
+  color:#fff
+}
+
+/* .cardWrap {
+  width: 39em;
+  margin: 3em auto;
+  color: #fff;
+  font-family: sans-serif;
+}
+/* 
+.card {
+  background: linear-gradient(to bottom, red 0%, red 26%, grey 26%, grey 100%);
+  height: 20rem;
+  float: left;
+  position: relative;
+  padding: 1em;
+  margin-top: 100px;
+} */
+
+.cardLeft {
+  background-image: linear-gradient(135deg, rgba(159, 159, 159, 0.46) 0%, rgba(159, 159, 159, 0.46) 14.286%,rgba(165, 165, 165, 0.46) 14.286%, rgba(165, 165, 165, 0.46) 28.572%,rgba(171, 171, 171, 0.46) 28.572%, rgba(171, 171, 171, 0.46) 42.858%,rgba(178, 178, 178, 0.46) 42.858%, rgba(178, 178, 178, 0.46) 57.144%,rgba(184, 184, 184, 0.46) 57.144%, rgba(184, 184, 184, 0.46) 71.43%,rgba(190, 190, 190, 0.46) 71.43%, rgba(190, 190, 190, 0.46) 85.716%,rgba(196, 196, 196, 0.46) 85.716%, rgba(196, 196, 196, 0.46) 100.002%),linear-gradient(45deg, rgb(252, 252, 252) 0%, rgb(252, 252, 252) 14.286%,rgb(246, 246, 246) 14.286%, rgb(246, 246, 246) 28.572%,rgb(241, 241, 241) 28.572%, rgb(241, 241, 241) 42.858%,rgb(235, 235, 235) 42.858%, rgb(235, 235, 235) 57.144%,rgb(229, 229, 229) 57.144%, rgb(229, 229, 229) 71.43%,rgb(224, 224, 224) 71.43%, rgb(224, 224, 224) 85.716%,rgb(218, 218, 218) 85.716%, rgb(218, 218, 218) 100.002%);
+  float: left;
+  position: relative;
+  padding: 1em;
+  margin-top: 100px;
+  border-radius: 8px;
+  width: 40em;
+}
+
+.cardWrap {
+  font-size: 1.1em;
+  margin-top: 0; 
+}
+.cardWrap{
+  font-weight: normal;
+}
+.ticket_title, .ticket_name, .ticket_seat, .ticket_time,.ticket_snack,.amount {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.ticket_title, .ticket_name, .ticket_seat, .ticket_time,.ticket_snack,.amount{
+    font-size: 1.2em;
+    color: #000;
+}
+
+.ticket_title span, .ticket_name span, .ticket_seat span, .ticket_time span,.ticket_snack span,.amount span{
+  font-size: 1em;
+  color: rgb(65, 58, 58); 
+}
+.amount{
+  margin: -4em 4em 5px 1em;
+  color: #000;
+  float: right;
+}
+.ticket_title {
+  margin: 7.8% 0 0 0;
+  color: #000;
+}
+
+.ticket_name, .ticket_seat{
+  margin: .9em 0 0 0;
+  color: #000;
+}
+
+.ticket_time {
+  margin: 0em 0 0 3em;
+  color: #000;
+}
+
+.ticket_snack {
+  margin: 1em 0 0 15em;
+  color: #000;
+}
+.ticket_seat, .ticket_time {
+  float: left;
+  color: #000;
+}
+
+.eye {
+  position: relative;
+  width: 2em;
+  height: 1.5em;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 1em/0.6em;
+  z-index: 1;
+}
+
+.number {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.number{
+  color: red;
+  margin: .9em 0 0 0;
+  font-size: 2.5em;
+}
+
+.number span {
+  display: block;
+  color: #a2aeae;
+}
+
+/* .barcode {
+  height: 2em;
+  width: 0;
+  margin: 13.2em 0 0 .3em;
+  box-shadow: 1px 0 0 1px black,
+  5px 0 0 1px black,
+  10px 0 0 1px black,
+  11px 0 0 1px black,
+  15px 0 0 1px black,
+  18px 0 0 1px black,
+  22px 0 0 1px black,
+  23px 0 0 1px black,
+  26px 0 0 1px black,
+  30px 0 0 1px black,
+  35px 0 0 1px black,
+  37px 0 0 1px black,
+  41px 0 0 1px black,
+  44px 0 0 1px black,
+  47px 0 0 1px black,
+  51px 0 0 1px black,
+  56px 0 0 1px black,
+  59px 0 0 1px black,
+  64px 0 0 1px black,
+  68px 0 0 1px black,
+  72px 0 0 1px black,
+  74px 0 0 1px black,
+  77px 0 0 1px black,
+  81px 0 0 1px black;
+} 
+
+
+ */
+
+ .booking_history_container{
+   max-width: 1350px;
+   margin: 0 auto;
+   overflow: hidden;
+ }
+ .booking_history_title{
+   font-size: 45px;
+   text-transform: uppercase;
+   border-left:14px solid rgba(255, 255, 59, 0.78);
+   padding-left: 12px;
+   margin: 18px 8px;
+ }
+
+ .booking_history_container .booking_history_item{
+   width: 48%;
+   float: left;
+   padding: 0 20px;
+   background: #fff;
+   overflow: hidden;
+   margin: 10px;
+ }
+
+ .booking_history_container .booking_history_item_right, .booking_history_container .booking_history_item_left{
+   float: left;
+   padding: 20px;
+ }
+
+ .booking_history_container .booking_history_item_right {
+  padding: 79px 50px;
+  margin-right: 20px;
+  width: 25%;
+  position: relative;
+  height: 286px
+}
+.booking_history_container .booking_history_item_right .up_border, .booking_history_container .booking_history_item_right .down_border {
+    padding: 14px 15px;
+    background-color: #111;
+    border-radius: 50%;
+    position: absolute
+}
+.booking_history_container .booking_history_item_right .up_border {
+  top: -8px;
+  right: -35px;
+}
+.booking_history_container .booking_history_item_right .down_border {
+  bottom: -13px;
+  right: -35px;
+}
+.booking_history_container .booking_history_item_right .num {
+  font-size: 60px;
+  text-align: center;
+  color: #111
+}
+.booking_history_container .booking_history_item_right .day, .booking_history_container .booking_history_item_left .event {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+.booking_history_container .booking_history_item_right .day {
+  text-align: center;
+  font-size: 25px;
+}
+.booking_history_container .booking_history_item_left {
+  width: 71%;
+  padding: 34px 0px 19px 46px;
+  border-left: 3px dotted #999;
+} 
+.booking_history_container .booking_history_item_left .title {
+  color: #111;
+  font-size: 34px;
+  margin-bottom: 12px
+}
+.booking_history_container .booking_history_item_left .sce {
+  margin-top: 5px;
+  display: block
+}
+.booking_history_container .booking_history_item_left .sce .icon, .booking_history_container .booking_history_item_left .sce p,
+.booking_history_container .booking_history_item_left .loc .icon, .booking_history_container .booking_history_item_left .loc p{
+    float: left;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.booking_history_container .booking_history_item_left .sce .icon, .booking_history_container .booking_history_item_left .loc .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #666
+}
+.booking_history_container .booking_history_item_left .loc {display: block}
+.fix {clear: both}
+.booking_history_container .booking_history_item .tickets, .booked, .cancel{
+    color: #fff;
+    padding: 6px 14px;
+    float: right;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer
+}
+.booking_history_container .booking_history_item .tickets {background: #777}
+.booking_history_container .booking_history_item .booked {background: #3D71E9}
+.booking_history_container .booking_history_item .cancel {background: #DF5454}
+
+.linethrough {text-decoration: line-through}
+@media only screen and (max-width: 1150px) {
+  .booking_history_container .booking_history_item {
+    width: 100%;
+    margin-right: 20px
+  }
+  div.booking_history_container {
+    margin: 0 20px auto
+  }
+}
